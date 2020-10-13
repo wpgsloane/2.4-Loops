@@ -1,0 +1,26 @@
+class RunningTally {
+
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+       
+        //2. get user input
+        System.out.println("Lets add some numbers! [Type a negative number to quit]");
+        int n=0;
+        int t=0;
+        while (n>=0){
+            System.out.print("Add: ");
+            n=sc.nextInt();
+            if (n>0) {
+                t+=n;
+            }
+        }
+        
+        
+        System.out.println("Your total is " + t);
+        System.out.print("Goodbye!");
+    
+        //3. calculate and display answer
+    }
+}
