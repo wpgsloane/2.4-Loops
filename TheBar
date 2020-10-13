@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class TheBar {
+
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+        String answer;
+        int n=0;
+        int i=1;
+        //2. get user input
+        System.out.println("What character do you want your bar made of?");
+        answer=sc.nextLine();
+        
+        System.out.println("How long do you want your bar?");
+        n=sc.nextInt();
+        
+        System.out.println("Here is your bar!");
+        while (i<=n){
+            System.out.print(answer);
+            i++;
+        }
+        
+    }
+}
