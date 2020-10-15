@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Example {
+
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+        String answer="";
+        int r=0;
+        //2. get user input
+        System.out.println("What character do you want your triangle to be made of?");
+        answer=sc.nextLine();
+        
+        System.out.println("How many rows do you want in your triangle?");
+        r=sc.nextInt();
+        System.out.println("Here's your triangle!");
+        
+        for (int i=1; i<r; i++){
+            for (int g=1; g<i; g++){
+               System.out.print(answer); 
+            }
+            System.out.println("");
+        }
+        
+    }
+}
